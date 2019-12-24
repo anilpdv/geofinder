@@ -13,6 +13,7 @@
     "countryjs": "^1.8.0",
     "express": "^4.17.1",
     "geocoder": "^0.2.3",
-    "geoip-lite": "^1.3.8"
+    "geoip-lite": "^1.3.8",
+    "number-to-words": "^1.2.4"
   }
 }
