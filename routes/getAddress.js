@@ -5,7 +5,7 @@ const countryjs = require("countryjs");
 
 router.get("/ip", async (req, res) => {
   const data = {};
-  const ip = req.headers["x-forwarded-for"] || req.connection.remoteAddress;
+  const ip = req.ip;
 
   console.log({ ip });
   const geo = geoip.lookup(ip);
