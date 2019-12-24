@@ -4,6 +4,7 @@ const geoip = require("geoip-lite");
 
 router.get("/", (req, res) => {
   const ip = req.ip;
+  console.log({ ip });
   const geo = geoip.lookup(ip);
   res.json(geo);
 });
