@@ -3,7 +3,7 @@ const router = express.Router();
 const geoip = require("geoip-lite");
 const countryjs = require("countryjs");
 
-router.get("/", async (req, res) => {
+router.get("/ip", async (req, res) => {
   const data = {};
   const ip = req.headers["x-forwarded-for"] || req.connection.remoteAddress;
 
